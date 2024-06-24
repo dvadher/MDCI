@@ -1265,6 +1265,9 @@ a.pagination_count .active, a.pagination_count:hover {
 /*=================================== media query css ===================================*/
 
 @media only screen and (min-width: 300px) and (max-width: 767px) {
+	section.testimonials{
+		display:none;
+	}
 	.is_desktop{
 		display:none;
 	}
