@@ -1268,6 +1268,17 @@ section.programs.is_home .nav-link.active {
 /*=================================== media query css ===================================*/
 
 @media only screen and (min-width: 300px) and (max-width: 767px) {
+	.bg_banner-text p {
+		font-size: 16px;
+	}
+	.bg_banner-text h1 {
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 130%;
+	}
+	.bg_banner-text {
+		gap: 0.5rem;
+	}
 	section.testimonials{
 		display:none;
 	}
@@ -1385,7 +1396,7 @@ section.programs.is_home .nav-link.active {
 		font-size: 14px;
 	}
 	section.choose, section.programs, .event, section.home_gallery, .colleges, .partners_placement, 
-	.home_contact-component, .faq {
+	.home_contact-component, .faq, section.programs.course_listing-pg {
 		padding: 40px 0px;
 	}
 	.featured_event-heading{
@@ -1683,11 +1694,35 @@ section.programs.is_home .nav-link.active {
 		background-color: #063693;
 		padding: 40px 0px;
 	}
-
-
-
-
-
+	section.programs.course_listing-pg .home-program_tab .nav-tabs {
+		gap: 12px;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+        overflow-x: scroll;
+        overflow-y: hidden;
+		font-size: 14px;
+	}
+	section.programs.course_listing-pg .home-program_tab .nav-tabs .nav-link{
+		font-size: 14px;
+	}
+	section.programs.course_listing-pg li.nav-item {
+		padding-bottom: 13px;
+	}
+	section.programs.course_listing-pg .container {
+		padding-right: 0;
+	}
+	section.programs.course_listing-pg .section_heading.is_para, section.programs.course_listing-pg .home_program-content {
+		padding-right: .625rem;
+	}
+	.pagination {
+		margin-top: 30px;
+	}
+	.pagination_count{
+		width: 20px;
+		height: 20px;
+		font-size: 12px;
+	}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
