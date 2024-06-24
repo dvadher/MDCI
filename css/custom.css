@@ -1258,7 +1258,10 @@ a.arrow_right, a.arrow_left {
 a.pagination_count .active, a.pagination_count:hover {
     color: #0156FF;
 }
-
+section.programs.is_home .nav-link.active {
+    background: transparent !important;
+    color: #000000 !important;
+}
 
 
 
