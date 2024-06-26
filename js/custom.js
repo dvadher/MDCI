@@ -5,8 +5,6 @@ $(document).ready(function () {
     $(window).resize(function () {
         var min_height = $(window).height() - ($(".custom-header").height() + $(".custom-footer").height());
         $(".main_page").css('min-height', min_height + 'px');
-    });
-
 
     
     // $(window).scroll(function(){
