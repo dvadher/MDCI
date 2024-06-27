@@ -1415,17 +1415,55 @@ a.btn-view.btn_border:hover {
     transform: translate(-50%, -50%);
 }
 .wtsp_chat {
-    width: 60px;
+	width: 60px;
     height: 60px;
     position: fixed;
     bottom: 40px;
     left: 40px;
+    z-index: 999;
 }
 
 
 /*=================================== media query css ===================================*/
 
 @media only screen and (min-width: 300px) and (max-width: 767px) {
+	section.ad_banner p {
+		font-size: 12px;
+		line-height: 15px;
+	}
+	.footer_widjet {
+		gap: 8px;
+	}
+	span.footer_label{
+		width: 42px;
+		height: 20px;
+		font-size: 10px;
+	}
+	.social_wrapper svg {
+		width: 14px;
+	}
+	.footer_widjet ul {
+		gap: 4px;
+	}
+	.footer_link, .footer_copyright p{
+		font-size: 14px;
+	}
+	.footer_top .row {
+		justify-content: space-between;
+		gap: 30px 0px;
+	}
+	.footer_copyright{
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+	}
+	.wtsp_chat {
+		width: 40px;
+		height: 40px;
+		position: fixed;
+		bottom: 20px;
+		left: 10px;
+	}
 	.place_logo-item img {
 		object-fit: contain;
 		width: 100px;
@@ -1471,12 +1509,11 @@ a.btn-view.btn_border:hover {
 	}
 	.footer_top-left {
 		gap: 16px;
-		margin-bottom: 30px;
 	}
 	.footer_copyright.is_mobile {
 		margin-top: 20px;
 	}
-	.footer_copyright, .social_wrapper {
+	.footer_copyright {
 		margin-top: 40px;
 	}
 	.faq_accordian button.btn.btn-link{
