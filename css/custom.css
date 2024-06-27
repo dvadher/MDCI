@@ -219,7 +219,7 @@ input {
 	list-style: none;
 }
 
-.custom_header ul {
+.custom-header ul {
 	gap: 1.5rem;
 }
 
@@ -261,6 +261,7 @@ section.ad_banner p {
 .container.nav_shadow {
 	padding-bottom: 10px;
 	padding-top: 10px;
+	position: relative;
 }
 
 .custom-footer {
@@ -1279,6 +1280,8 @@ section.programs.course_listing-pg.is_clg {
     width: 100%;
     background: #0156FF;
     padding: 11px 0px;
+	position: relative;
+    z-index: 99;
 }
 .custom-header .navbar-nav-link:hover {
     color: #0156ff;
@@ -1427,6 +1430,14 @@ a.btn-view.btn_border:hover {
 /*=================================== media query css ===================================*/
 
 @media only screen and (min-width: 300px) and (max-width: 767px) {
+	.custom-header ul {
+		gap: 1.5rem;
+		padding-top: 48px !important;
+		background: #fff;
+	}
+	.top-_nav{
+		text-align: center;
+	}
 	.logos{
 		padding: 0;
 	}
