@@ -1425,7 +1425,10 @@ a.btn-view.btn_border:hover {
     left: 40px;
     z-index: 999;
 }
-
+a.header_btn.download_btn {
+    display: flex;
+    gap: 11px;
+}
 
 /*=================================== media query css ===================================*/
 
