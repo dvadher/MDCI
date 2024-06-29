@@ -1418,12 +1418,29 @@ a.btn-view.btn_border:hover {
     transform: translate(-50%, -50%);
 }
 .wtsp_chat {
-	width: 60px;
-    height: 60px;
     position: fixed;
-    bottom: 40px;
-    left: 40px;
+    top:60%;
+    right: 40px;
     z-index: 999;
+	
+}
+.wtsp_chat a {
+	background: #6DC65F;
+    display: inline-flex;
+    border-radius: 57.5px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 600;
+    align-items: center;
+    gap: 11px;
+    padding-left: 22px;
+    padding-right: 9px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+.wtsp_chat a svg {
+    width: 40px;
+    height: 40px;
 }
 a.header_btn.download_btn {
     display: flex;
@@ -1433,6 +1450,27 @@ a.header_btn.download_btn {
 /*=================================== media query css ===================================*/
 
 @media only screen and (min-width: 300px) and (max-width: 767px) {
+	.mobile_contact {
+		padding: 0px 20px;
+		margin-top: 100px;
+	}
+	.wtsp_chat{
+		right: -46px;
+        z-index: 999;
+        transform: rotate(89deg);
+		bottom: 60%;
+	}
+	.wtsp_chat a{
+		font-size: 11px;
+        gap: 9px;
+        padding-left: 5px;
+        padding-right: 5px;
+	}
+	.wtsp_chat a svg {
+		width: 15px;
+        height: 15px;
+	}
+
 	.custom-header ul {
 		gap: 1.5rem;
 		padding-top: 48px !important;
@@ -1473,13 +1511,6 @@ a.header_btn.download_btn {
 		flex-direction: column;
 		align-items: center;
 		gap: 10px;
-	}
-	.wtsp_chat {
-		width: 40px;
-		height: 40px;
-		position: fixed;
-		bottom: 20px;
-		left: 10px;
 	}
 	.place_logo-item img {
 		object-fit: contain;
@@ -1873,6 +1904,7 @@ a.header_btn.download_btn {
 		background: #fff;
 		padding-top: 54px;
 		padding-bottom: 54px;
+		height: 100%;
 	}
 
 	i.fa.fa-bars {
@@ -1933,9 +1965,10 @@ a.header_btn.download_btn {
         font-weight: 600;
         padding: 5px 15px;
         border-radius: 8px;
-        position: absolute;
         top: 23px;
         right: 70px;
+        text-align: center;
+        justify-content: center;
 	}
 
 	.page-wrapper {
