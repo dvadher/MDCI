@@ -1445,11 +1445,36 @@ a.btn-view.btn_border:hover {
 a.header_btn.download_btn {
     display: flex;
     gap: 11px;
+    align-items: center;
 }
-
+.mobile_contact .footer_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
+    margin-top: 24px;
+}
+a.header_btn.download_btn svg {
+    width: 15px;
+    height: 15px;
+}
 /*=================================== media query css ===================================*/
 
 @media only screen and (min-width: 300px) and (max-width: 767px) {
+	.top-_nav p {
+		max-width: 65%;
+		margin: 0 auto;
+		font-size: 13px;
+		line-height: 130%;
+	}
+	a.header_btn.download_btn svg{
+		width: 10px;
+		height: 10px;
+	}
+	.mobile_contact .footer_bottom a {
+		color: #000;
+	}
 	.mobile_contact {
 		padding: 0px 20px;
 		margin-top: 100px;
