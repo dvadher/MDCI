@@ -255,6 +255,7 @@ input {
 	font-size: 24px;
 	text-align: center;
 	justify-content: center;
+	margin-top: 48px;
 }
 section.ad_banner p {
     font-size: 18px;
@@ -1600,10 +1601,40 @@ ul.course_liting li:after {
 }.home_icon {
     margin-right: 6px;
 }
+.clg_detail-tab-row {
+	padding: 50px 0px 0px;
+    display: flex;
+    gap: 36px;
+}
 
+.clg_detail-tab-row  .nav-tabs {
+    flex-direction: column;
+}
 
+.clg_detail-tab-row .nav-tabs .nav-link {
+	height: 96px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 30px;
+    color: #585858;
+	background-color: #F8F8F8;
+	border-bottom: 1px solid #00000033;
+}
+.clg_detail-tab-row nav {
+	width: 30% !important;
+}
+.clg_detail-tab-row .tab-content{
+	width: 70%;
+}
+.nav-tabs .nav-item {
+    margin-bottom: 0px;
+}
 
-
+.clg_detail-tab-row .nav-tabs .nav-link:last-child {
+    border: transparent;
+}
 
 
 
