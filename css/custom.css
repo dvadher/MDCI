@@ -531,6 +531,7 @@ section.choose {
 
 .choose_im-wrapper {
 	margin-right: 36px;
+    height: 100%;
 }
 
 .choose_grid .row {
@@ -1749,6 +1750,9 @@ section.bg_banner.is_breadcrumb {
 }
 .is_breadcrumb ul li.active {
     color: #fff !important;
+}
+.choose_im-wrapper img {
+    object-fit: cover;
 }
 /*=================================== media query css ===================================*/
 
