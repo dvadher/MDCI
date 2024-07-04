@@ -1409,10 +1409,11 @@ a.btn-view.btn_border:hover {
     padding: 30px;
 }
 .wtsp_chat {
-    position: fixed;
-    top:60%;
-    right: 40px;
+	position: fixed;
+    top: auto;
+    right: 10px;
     z-index: 999;
+    bottom: 10px;
 	
 }
 .wtsp_chat a {
@@ -1754,9 +1755,166 @@ section.bg_banner.is_breadcrumb {
 .choose_im-wrapper img {
     object-fit: cover;
 }
+.contact_block {
+    background: #f1f6fc;
+    padding: 50px 30px 37px;
+    text-align: center;
+}.contact_top i {
+    font-size: 80px;
+    color: #106eea;
+    line-height: 1;
+    margin-top: -5px;
+    position: relative;
+    z-index: 1;
+    font-weight: 600;
+}
+
+.contact_top h4 {
+    color: #363636;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+}
+.contact_block a {
+    color: #000;
+}
+.contact_top svg {
+    width: 80px;
+    height: 80px;
+}
+.contact_top {
+    margin-bottom: 30px;
+}
+.contact_block a, .contact_block p{
+	font-size: 18px;
+	
+}
+.contact_icon {
+    position: relative;
+}
+.contact_icon:after {
+    background: #0156ff1c;
+    content: "";
+    position: absolute;
+    z-index: 0;
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    animation: pulse-border 1.5s ease-out infinite;
+    transition: all 0.3s ease;
+    top: 36px;
+    top: 2%;
+    left: 38%;
+}
+.contact_block {
+	border-radius: 12px;
+}
+.features-iem img {
+    margin: 0 auto;
+    width: 100px;
+    object-fit: contain;
+}
+.features-iem p {
+	font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+.features-iem {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+section.about_itro:after {
+    width: 24rem;
+    height: 36rem;
+    background-position: 18rem center;
+    background-size: 12rem;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: #0041c9;
+    background-image: url(https://assets-v2.scaler.com/assets/scaler/png/dots-5bca2e5c7d13825ee3b9b35a9c39ce74edd5dc22dd54fdc5422d3fa8ce61414a.png);
+    background-repeat: no-repeat;
+    content: "";
+}
+.video_wrapper {
+    position: relative;
+    z-index: 99;
+}.intro_text p {
+    font-size: 14px;
+}
+section.about_itro.is_right:after {
+    right: auto;
+    left: 0;
+}
+.we_do-text p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.gallery-block .row {
+	gap: 30px 0px;
+}
+.is_breadcrumb a {
+    color: #fff;
+    opacity: 70%;
+}
+.review_slide-wrapper {
+	overflow: hidden;
+}
 /*=================================== media query css ===================================*/
 
 @media only screen and (min-width: 300px) and (max-width: 767px) {
+	
+
+	section.about_itro .section_heading h3, section.we_do .section_heading h3{
+		padding: 20px 0px;
+	}
+	section.about_itro .col-md-7.about_left.pr-5 {
+		order: 2;
+	}
+	.col-md-7.about_left.pr-5 {
+		padding-right: 0 !important;
+	}
+	.features-iem{
+		width: 70%;
+    margin: 30px auto 0px;
+	}
+	.features.row {
+		margin: 20px 0px 50px !important;
+	}
+	.col-md-7.about_left.pl-5 {
+		padding-left: 20px !important;
+	}
+	section.about_itro:after{
+
+		display:none;
+	}
+	.contact_block a, .contact_block p{
+		font-size: 12px;
+	}
+	.contact-component .row {
+		gap: 30px;
+	}
+	.contact_block {
+		padding: 30px;
+		border-radius: 12px;
+	}
+	.contact_top {
+		margin-bottom: 15px;
+	}
+	.contact_top svg {
+		width: 40px;
+		height: 40px;
+	}
+	.contact_icon:after{
+		width: 50px;
+    height: 50px;
+	}
 	.clg_detail-tab-heading p{
 		font-size: 16px;
     line-height: 20px;
@@ -1859,16 +2017,15 @@ section.bg_banner.is_breadcrumb {
 		margin-top: 100px;
 	}
 	.wtsp_chat{
-		right: -46px;
+		right: 0;
         z-index: 999;
-        transform: rotate(89deg);
-		bottom: 60%;
+        bottom: 10px;
 	}
 	.wtsp_chat a{
 		font-size: 11px;
         gap: 9px;
-        padding-left: 5px;
-        padding-right: 5px;
+		padding-left: 10px;
+        padding-right: 10px;
 	}
 	.wtsp_chat a svg {
 		width: 15px;
@@ -2414,6 +2571,9 @@ section.bg_banner.is_breadcrumb {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+	section.about_itro:after{
+		width: 15rem;
+	}
 	.clg_detail-review-top {
 		display: block !important;
 	}
