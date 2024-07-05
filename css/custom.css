@@ -165,7 +165,7 @@ button:hover,
 
 /*================================= 4 Global Styles (#glob) =================================*/
 .container {
-	max-width: 80rem;
+	max-width: 85rem;
 }
 
 .page-wrapper {
@@ -235,7 +235,7 @@ input {
 	color: #fff;
 	font-size: 14px;
 	font-weight: 600;
-	padding: 10px 53px;
+    padding: 10px 20px;
 	border-radius: 8px;
 	box-shadow: 0px 0px 0px 4px #0156FF1F;
 	border: 1px solid #0156FF;
@@ -503,7 +503,8 @@ section.choose {
 .testimonial_content h5 {
 	color: #000000;
 	font-weight: 700;
-	font-size: 20px;
+	font-size: 14px;
+	max-width: 200px;
 }
 
 .testimonial_content p {
@@ -979,13 +980,14 @@ section.testimonials .testimonial_content p {
 	border-radius: 32px;
 	box-shadow: 0px 57.87px 123.12px 0px #15151526;
 	padding: 50px 35px 50px 28px;
+	margin: 0px 20px;
 }
 
 .testimonial_slidecontent p {
 	font-size: 16px;
 }
 
-section.testimonials .swiper-container {
+section.testimonials .swiper-container, .testimonial_wrap {
 	margin-top: 60px;
 }
 
@@ -1866,11 +1868,43 @@ section.about_itro.is_right:after {
 .review_slide-wrapper {
 	overflow: hidden;
 }
+.slick-list{
+	overflow: unset !important;
+}
+.slick-arrow {
+    display: none !important;
+}
+.review_home-footer {
+    justify-content: space-between;
+    width: 100%;
+}
+.rating-star img {
+    width: 13px;
+}
+a.header_btn.download_btn.is_login {
+	background: #FF2626;
+    box-shadow: 0px 0px 0px 4px #FFE7E7;
+    border-color: #FF2626;
+}
+.main-menuright {
+    gap: 10px;
+}
+a.header_btn.download_btn.is_login:hover {
+    background: transparent;
+    color: #FF2626;
+}
+a.header_btn.download_btn.is_login:hover path {
+    fill: red !important;
+}
+
 /*=================================== media query css ===================================*/
 
 @media only screen and (min-width: 300px) and (max-width: 767px) {
 	
-
+	.mobile_contact .header_btn {
+		width: 250px;
+		margin: 0 auto;
+	}
 	section.about_itro .section_heading h3, section.we_do .section_heading h3{
 		padding: 20px 0px;
 	}
@@ -2106,9 +2140,6 @@ section.about_itro.is_right:after {
 	}
 	.bg_banner-text {
 		gap: 0.5rem;
-	}
-	section.testimonials{
-		display:none;
 	}
 	.is_desktop{
 		display:none;
@@ -2412,6 +2443,7 @@ section.about_itro.is_right:after {
 		padding: 10px 15px;
 		font-size: 14px;
 		line-height: 150%;
+		margin-top: 57px;
 	}
 	section.our-clients {
 		margin-top: 50px;
