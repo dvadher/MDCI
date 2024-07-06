@@ -1699,12 +1699,12 @@ a.btn_text {
     color: #000;
 }
 .clg_detail-tab-heading p {
-    color: #667085;
-    font-size: 18px;
-    line-height: 36px;
+	color: #667085;
+    font-size: 16px;
+    line-height: 150%;
 }
 .clg_detail-tab-heading {
-    gap: 20px;
+	gap: 8px;
 }
 .partner_logo img {
     height: 79px;
@@ -1713,11 +1713,12 @@ a.btn_text {
     object-fit: contain;
 }
 .row.clg_placement-logo {
-    gap: 36px 0px;
+    gap: 16px 0px;
 }
 .clg_detail-review-bottom p {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 18px;
+	text-align: left;
 }
 .clg_detail-review-bottom h5 {
     font-size: 18px;
@@ -1739,7 +1740,7 @@ p.is_designation.text-blue {
     margin-bottom: 24px;
 }
 .clg_detail-review {
-    border: 1px solid #6941C6;
+	border: 1px solid #0156ff;
     padding: 28px 1rem;
 	border-radius: 12px;
 }
@@ -1896,6 +1897,28 @@ a.header_btn.download_btn.is_login:hover {
 a.header_btn.download_btn.is_login:hover path {
     fill: red !important;
 }
+.partner_logo {
+    border: 1px solid #ebebeb;
+    background: #fff;
+    padding: 10px;
+    border-radius: 12px;
+}
+.clg_detail-review-top img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.clg_detail-review-top{
+	align-items: center;
+}
+.clg_detail-review-content h4 {
+    font-weight: 600;
+    color: #000;
+}
+
 
 /*=================================== media query css ===================================*/
 
@@ -1958,7 +1981,7 @@ a.header_btn.download_btn.is_login:hover path {
 		font-size: 14px;
 	}
 	.row.clg_placement-logo .partner_logo{
-        width: 50%;
+        width: 100%;
 		margin: 0 auto;
 	}
 	.clg_detail-review{
