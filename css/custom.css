@@ -971,8 +971,8 @@ section.testimonials .testimonial_content p {
 }
 
 .testimonial_slidecontent {
-	gap: 20px;
-	padding-left: 20px;
+	gap: 5px;
+	padding-left: 10px;
 }
 
 .testimonial_item {
@@ -984,7 +984,7 @@ section.testimonials .testimonial_content p {
 }
 
 .testimonial_slidecontent p {
-	font-size: 16px;
+	font-size: 14px;
 }
 
 section.testimonials .swiper-container, .testimonial_wrap {
@@ -1918,6 +1918,12 @@ a.header_btn.download_btn.is_login:hover path {
     font-weight: 600;
     color: #000;
 }
+.rating_star-grp svg {
+    width: 18px;
+}
+
+
+
 
 
 /*=================================== media query css ===================================*/
