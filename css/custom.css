@@ -282,12 +282,14 @@ section.ad_banner p {
 }
 
 .footer_heading {
-	color: #fff;
+	color: yellow;
 	font-weight: 700;
 	font-size: 14px;
 	text-transform: uppercase;
 }
-
+.top-highlight{
+	color: yellow;
+}
 .footer_link {
 	color: #fff;
 	font-size: 1rem;
@@ -504,7 +506,7 @@ section.choose {
 	color: #000000;
 	font-weight: 700;
 	font-size: 14px;
-	max-width: 200px;
+	max-width: 100%;
 }
 
 .testimonial_content p {
@@ -798,8 +800,8 @@ a.btn_v2 {
 }
 
 .gallery_component {
-	padding: 40px 0px;
-	gap: 60px;
+	padding: 80px 0px;
+	gap: 30px;
 }
 
 .colleges {
@@ -1168,7 +1170,7 @@ span.footer_label {
 	display: none;
 }
 .bg_banner{
-	padding:80px 0px;
+	padding: 40px 0px;
 	background: linear-gradient(180deg, rgba(1, 86, 255, 0.95) 0%, rgba(0, 45, 135, 0.95) 100%);
 	background-image: url(../images/banner1.svg);
 	position: relative;
@@ -1181,7 +1183,7 @@ span.footer_label {
     font-weight: 700;
 }
 .bg_banner-text {
-    gap: 1rem;
+    gap: 8px;
     position: relative;
     z-index: 9;
 }
@@ -1921,6 +1923,27 @@ a.header_btn.download_btn.is_login:hover path {
 .rating_star-grp svg {
     width: 18px;
 }
+section.gallery-block img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+.slick-track {
+	display: flex !important;
+  }
+  
+  .slick-slide {
+	height: auto !important;
+  }
+
+  .element.element-1.slick-slide .testimonial_item {
+    height: 100%;
+}
+section.event {
+    background: #F5F8FF;
+}
+
+
 
 
 
@@ -1929,6 +1952,10 @@ a.header_btn.download_btn.is_login:hover path {
 /*=================================== media query css ===================================*/
 
 @media only screen and (min-width: 300px) and (max-width: 767px) {
+	iframe {
+		width: 100%;
+		height: 100%;
+	}
 	
 	.mobile_contact .header_btn {
 		width: 250px;
@@ -2472,7 +2499,7 @@ a.header_btn.download_btn.is_login:hover path {
 		padding: 10px 15px;
 		font-size: 14px;
 		line-height: 150%;
-		margin-top: 57px;
+		margin-top: 70px;
 	}
 	section.our-clients {
 		margin-top: 50px;
