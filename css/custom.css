@@ -1014,7 +1014,7 @@ section.testimonials span.swiper-pagination-bullet.swiper-pagination-bullet-acti
 }
 
 section.testimonials {
-	background: #F9F9F9;
+	background: #f1f6ff;
 	padding: 80px 0px 85px 0px;
 }
 
@@ -1942,11 +1942,31 @@ section.gallery-block img {
 section.event {
     background: #F5F8FF;
 }
-
-
-
-
-
+.static_content-item h3 {
+    font-size: 25px;
+    line-height: 35px;
+    color: #101828;
+    font-weight: 700;
+    padding: 0 0px 18px;
+}
+.static_content-item p {
+    font-size: 15px;
+	color:#000;
+}
+.static_content-item a {
+    color: #0156ff;
+    font-size: 15px;
+}
+.static_content-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+.static_para {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 
 
 /*=================================== media query css ===================================*/
