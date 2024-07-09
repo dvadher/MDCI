@@ -1417,7 +1417,7 @@ a.btn-view.btn_border:hover {
     top: auto;
     right: 10px;
     z-index: 999;
-    bottom: 10px;
+    bottom: 65px;
 	
 }
 .wtsp_chat a {
@@ -1429,7 +1429,7 @@ a.btn-view.btn_border:hover {
     font-weight: 600;
     align-items: center;
     gap: 11px;
-    padding-left: 22px;
+    padding-left: 9px;
     padding-right: 9px;
     padding-top: 9px;
     padding-bottom: 9px;
@@ -1967,7 +1967,37 @@ section.event {
     flex-direction: column;
     gap: 8px;
 }
+.whatsapp-box {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 235px;
+    position: fixed;
+    top: auto;
+    right: 40px;
+    z-index: 999;
+    bottom: 35px;
+    float: right;
+    /* height: calc(100% - 260px); */
+}
 
+.whatsapp-box p {
+    margin: 0 0 10px 0;
+    font-size: 12px;
+}
+
+.whatsapp-box a {
+    text-decoration: none;
+    color: #25D366;
+    font-weight: bold;
+}
+
+.whatsapp-box p img {
+   width: 15px;
+}
 
 /*=================================== media query css ===================================*/
 
