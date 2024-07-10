@@ -1998,6 +1998,9 @@ section.event {
 .whatsapp-box p img {
    width: 15px;
 }
+.founder_heading {
+    font-size: 18px !important;
+}
 
 /*=================================== media query css ===================================*/
 
