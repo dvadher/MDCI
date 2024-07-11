@@ -1304,8 +1304,8 @@ section.programs.course_listing-pg.is_clg {
 	padding: 112px 0px !important;
 }
 .footer_copyright {
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+    justify-content: space-around;
     padding-top: 30px;
     border-top: 1px solid #ffffff29;
     margin-top: 60px;
@@ -1968,25 +1968,26 @@ section.event {
     gap: 8px;
 }
 .whatsapp-box {
-    background-color: white;
+	background-color: white;
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 235px;
+    max-width: 225px;
     position: fixed;
     top: auto;
-    right: 40px;
+    right: 49px;
     z-index: 999;
-    bottom: 35px;
+    bottom: 59px;
     float: right;
+    font-size: 12px !important;
     /* height: calc(100% - 260px); */
 }
 
 .whatsapp-box p {
-    margin: 0 0 10px 0;
-    font-size: 12px;
+    margin: 0 0 0px 0;
+    font-size: 11px;
 }
 
 .whatsapp-box a {
@@ -2000,6 +2001,20 @@ section.event {
 }
 .founder_heading {
     font-size: 18px !important;
+}
+.social_wrapper a {
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social_wrapper a img {
+    width: 100%;
+    object-fit: contain;
+}
+.social_wrapper a svg {
+    width: 25px;
+    height: 25px;
 }
 
 /*=================================== media query css ===================================*/
