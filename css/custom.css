@@ -1764,6 +1764,7 @@ section.bg_banner.is_breadcrumb {
     background: #f1f6fc;
     padding: 50px 30px 37px;
     text-align: center;
+	height: 100%;
 }.contact_top i {
     font-size: 80px;
     color: #106eea;
@@ -2016,7 +2017,31 @@ section.event {
     width: 25px;
     height: 25px;
 }
-
+.section_topic{
+	background: #F5F8FF;
+}
+.topic_item {
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px 0px #00000012;
+}
+p.hours {
+    background: #f5f8ff;
+    border-radius: 8px;
+    display: inline-grid;
+    padding: 5px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.topic_item h6 {
+    font-size: 17px;
+    font-weight: 700;
+}
+.topic-component .row {
+    gap: 24px 0px;
+}
 /*=================================== media query css ===================================*/
 
 @media only screen and (min-width: 300px) and (max-width: 767px) {
