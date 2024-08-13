@@ -1749,7 +1749,7 @@ p.is_designation.text-blue {
 section.bg_banner.is_breadcrumb {
     padding-bottom: 28px;
     background: #0156ff;
-    padding-top: 65px;
+    padding-top: 96px;
 }
 .is_breadcrumb ul li {
     color: #ffffffc2;
@@ -2042,9 +2042,291 @@ p.hours {
 .topic-component .row {
     gap: 24px 0px;
 }
+.event-date.position-relative {
+    background-color: #0156ff;
+    color: #fff;
+}
+/* New css */
+
+
+
+
+.event-col-top-content {
+    background-color: #E6EFFF;
+    padding: 20px 0px;
+    gap: 20px;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    transform: translateX(-0%);
+}
+.event-col-entry-title {
+    background-image: url(../images/pattern-grudge.png);
+    padding: 30px;
+    background-color: #ffe7e7;
+    position: relative;
+}
+.event-date {
+    background-image: linear-gradient(#82b440, #4c6e1e);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.event-date, .event-col-top-content {
+    background-image: url(../images/pattern-grudge.png);
+}
+.event-col:hover .event-col-top-content {
+    transform: translateX(-150%);
+}
+.event-col-entry-title:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-color: #0156FF;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    transform: translateX(-150%);
+}
+.event-col:hover .event-col-entry-title:after {
+    transform: translateX(-0%);
+}
+.event-col-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+a.event-col {
+    overflow: hidden;
+}
+.event-col-entry-title h3 {
+	position: relative;
+    z-index: 99;
+    color: #000;
+    font-weight: 600;
+}
+.event-col-im-wrapper {
+    height: 500px;
+}
+.event-col-im-wrapper img {
+    border-radius: 12px;
+}
+.event-col:hover .event-col-entry-title h3{
+	color:#fff;
+}
+section.clg_detail-hero.p-0.is_event {
+    height: 350px;
+}
+section.clg_detail-hero.p-0.is_event img {
+    object-fit: cover;
+}
+.event_contact-icon {
+    width: 70px;
+    height: 70px;
+    background: #E6EFFF;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.event_contact-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.event_contact-wrapper {
+    padding: 45px;
+    box-shadow: 0 2px 52px #0000002e;
+    border-radius: 30px;
+    margin-top: -62px;
+    position: relative;
+    z-index: 0;
+    background: #fff;
+}
+.event_sidebar {
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, .16);
+    border-radius: 16px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+.event_sidebar h5 {
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.font-semibold {
+    font-weight: 700;
+}
+.event_connect-list p {
+    font-size: 14px;
+}
+.event_connect-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.event_sidebar h5 {
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 32px;
+    font-size: 24px;
+    border-bottom: 3px solid #0156ff;
+    display: inline-flex;
+    padding-bottom: 14px;
+}
+.event_sidebar{
+	margin-top: 60px;
+}
+.event_sidebar{
+	margin-top: 60px;
+}
+.elementor-author-box__avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+.elementor-author-box, .blog_date {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.blog_date svg {
+    width: 20px;
+    fill: #c5c5c5;
+}
+.blog-content-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.blog_rich-home {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    font-size: 15px;
+}
+.blog_content-top h4 {
+    color: #000;
+    font-weight: 700;
+	margin-bottom: 18px;
+}
+.blog_content {
+    padding: 30px;
+}
+.blog-content-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ebebeb;
+}
+.blog-item {
+    background: #fff;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 20px;
+}
+.blog-im-wrapper img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.elementor-author-box__text h6, .blog_date p, .blog_rich-home {
+    color: #000;
+}
+.blog_component .row {
+    margin-top: 60px;
+}
+.blog-im-wrapper.is_pg {
+    height: 370px;
+	margin: 45px 0px;
+}
+.blog-im-wrapper.is_pg img {
+    object-fit: cover;
+}
+.blog_pg-content.is_detail h2 {
+    font-size: 30px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.blog_detail-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+.author_top-detail {
+    margin: 24px 0px;
+}
+.author_top-detail .is-author {
+    border-bottom: 1px solid #000;
+    display: inline-flex;
+}
+.blog_detail-top h1 {
+    font-size: 55px;
+    line-height: 125%;
+}
+a.social_share-link {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #00000014;
+    border-radius: 100%;
+}
+.social_share {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.blog_detail-top h1 {
+    font-size: 32px;
+    line-height: 125%;
+}
+
+
+
+
 /*=================================== media query css ===================================*/
 
 @media only screen and (min-width: 300px) and (max-width: 767px) {
+	.is_breadcrumb ul{
+		flex-wrap: wrap;
+		text-align: center;
+    justify-content: center;
+	}
+	.event_contact-wrapper{
+		padding: 20px;
+	}
+	.event_contact-icon{
+		width: 40px;
+		height: 40px;
+	}
+	.event_contact-icon svg {
+		width: 16px;
+	}
+	.event_contact-wrapper .row {
+		gap: 15px;
+	}
+
+
 	iframe {
 		width: 100%;
 		height: 100%;
